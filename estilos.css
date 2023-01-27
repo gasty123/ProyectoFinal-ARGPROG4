@@ -2,38 +2,49 @@
     --color-carpeta: #F8D775;
 }
 *{
-    background-color: var(--color-carpeta);
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+    border: none;
 }
 body{
-    margin: 0;
+    background-color: #ffffff;
 }
-.barra-navegacion{
+/*Inicio del diseño de la barra de navegacion*/
+header{
     position: fixed;
     top: 0;
-    width: 100%;
-    overflow: hidden;
-    background-color: #ffffff;
-}
-.barra-navegacion label{
-    float: left;
-    text-align: center;
-    text-decoration: none;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 15px;
-    font-size: 17px;
+    height: 20px;
+    background-color: #fff;
+    box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
+}
+
+header .barra-navegacion ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .barra-navegacion li{
+    margin-left: 3rem;
     background-color: #ffffff;
     
 }
-.barra-navegacion-derecha{
-    float: right;
-    background-color: #ffffff;
-}
-.barra-navegacion-derecha input{
-    border: none;
+header .barra-navegacion ul li a{
+    font-size: 15px;
+    color: #0e2431;
+    font-weight: 600;
     text-decoration: none;
-    margin: 0;
-    text-align: center;
-    padding: 15px;
-    font-size: 17px;
-    background-color: #ffffff;
-    
+}
+header .barra-navegacion ul li a.activo,
+header .barra-navegacion ul li a:hover{
+    background-color: var(--color-carpeta);
 }
