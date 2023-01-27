@@ -1,6 +1,39 @@
+:root{
+    --color-carpeta: #F8D775;
+}
 *{
-    background-color: lightblue;
+    background-color: var(--color-carpeta);
 }
 body{
-    color: red;
+    margin: 0;
+}
+.barra-navegacion{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+.barra-navegacion label{
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 17px;
+    background-color: #ffffff;
+    
+}
+.barra-navegacion-derecha{
+    float: right;
+    background-color: #ffffff;
+}
+.barra-navegacion-derecha input{
+    border: none;
+    text-decoration: none;
+    margin: 0;
+    text-align: center;
+    padding: 15px;
+    font-size: 17px;
+    background-color: #ffffff;
+    
 }
